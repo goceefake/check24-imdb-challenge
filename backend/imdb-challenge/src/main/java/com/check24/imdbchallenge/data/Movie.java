@@ -16,6 +16,8 @@ public class Movie {
     @Id
     private long id;
 
+    private long id2;
+
     private String name;
 
     @OneToMany(mappedBy = "movie", cascade = CascadeType.ALL, fetch= FetchType.EAGER)
